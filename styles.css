@@ -8,5 +8,71 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: rgb(235, 89, 235)
+    background: linear-gradient(to top, lime, 20%, cyan);
 }
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: violet;
+    text-shadow: 2px 2px 8px lime;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: yellow
+    
+}
+
+.logo {
+    box-shadow: 0 0 50px yellow;
+}
+
+
+
+
+.Richmond {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.Richmond h1 {
+    font-size: 50px;
+    color: yellow;
+    text-shadow: 8px 8px 8px violet;
+}
+
+span {
+    color: yellow;
+    text-shadow:8px 8px 8px violet;
+}
+
+.Richmond a {
+    background: linear-gradient(to right, #B621FE, #1FD1F9 );
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellow;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+
+
+
