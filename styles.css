@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 .Richmond {
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 13%;
 }
 
 .Richmond h1 {
@@ -70,6 +70,44 @@ span {
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+}
+
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images .shape {
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    transform: translateX(-50);
+    transition: bottom 1s, left 1s;
+
+}
+
+.images .me{
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    overflow: none;
+    transform: translateX(-50);
+    transition: bottom 1s, left 1s;}
+
+.images:hover .shape{
+    bottom: 40px;
+
+}
+
+.images:hover .me{
+    left: 45%;
+
 }
 
 
