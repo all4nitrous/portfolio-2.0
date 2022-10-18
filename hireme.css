@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body {
+background: linear-gradient(90deg, #B58ECC 0%, #FB7BA2 30%, #FB7BA2 0%,  #FCE043 100%);
+
+}
+
+.contactus 
+{
+    position: relative;
+    width: 100px;
+    padding: 40px 100px;
+
+}
+
+.contactus .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
