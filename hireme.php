@@ -17,7 +17,7 @@
    <!--Form-->
     <div class="contact form">
     <h3>Send a Message</h3>
-    <form id="fr1">
+    <form method="post" action="subscriberform.php">
         <div class="formbox">
             <div class="row50">
                 <div class="inputbox">
@@ -89,18 +89,24 @@
 </div>
 </div>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<script type="text/javascript">
-    function loadEvents() {
-        var mailString;
-        function updateMailString() {
-            mailString = '?subject=' + encodeURIComponent($('#subject').val())
-                + '&body=' + encodeURIComponent($('#message').val());
-            $('#mail-link').attr('href',  'all4nitrous@gmail.com' + mailString);
-        }
-        $( "#subject" ).focusout(function() { updateMailString(); });
-        $( "#message" ).focusout(function() { updateMailString(); });
-        updateMailString();
-    }
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
+
 </script>
 </body>
 </html>
