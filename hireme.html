@@ -17,7 +17,7 @@
    <!--Form-->
     <div class="contact form">
     <h3>Send a Message</h3>
-    <form method="post" action="mailto:all4nitrous@gmail.com">
+    <form id="fr1">
         <div class="formbox">
             <div class="row50">
                 <div class="inputbox">
@@ -34,24 +34,24 @@
             <div class="row50">
                 <div class="inputbox">
                     <span>Email</span>
-                    <input type="text" placeholder="johndoe@email.com">
+                    <input type="text" placeholder="johndoe@email.com" id="subject">
                 </div>
                 <div class="inputbox">
                 <span>mobile</span>
-                    <input type="text" placeholder="+1 000-000-0000">
+                    <input type="text" placeholder="+1 000-000-0000" id="message">
                 </div>
             </div>
             <!--input box-->
             <div class="row100">
                 <div class="inputbox">
                     <span>Message</span>
-                    <textarea placeholder="Write your message here..."></textarea>
+                    <textarea placeholder="Write your message here..." id="textbox"></textarea>
                 </div>
                 </div>
 
                 <div class="row100">
                     <div class="inputbox">
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Email" >
                     </div>
                     </div>
             </div>
@@ -89,5 +89,19 @@
 </div>
 </div>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script type="text/javascript">
+    function loadEvents() {
+        var mailString;
+        function updateMailString() {
+            mailString = '?subject=' + encodeURIComponent($('#subject').val())
+                + '&body=' + encodeURIComponent($('#message').val());
+            $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
+        }
+        $( "#subject" ).focusout(function() { updateMailString(); });
+        $( "#message" ).focusout(function() { updateMailString(); });
+        $( "#textbox" ).focusout(function() { updateMailString(); });
+        updateMailString();
+    }
+</script>
 </body>
 </html>
